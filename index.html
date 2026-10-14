@@ -12,11 +12,14 @@
     .merek { font-weight: 800; letter-spacing: 3px; text-transform: uppercase; font-size: 18px; margin: 0 0 12px; }
     nav a { color: #4a5e4e; font-weight: 700; text-decoration: none; margin-right: 20px; }
     nav a:hover { text-decoration: underline; }
-    .hero { background-color: #dde3d4; border-radius: 28px; padding: 44px 40px; margin-top: 16px; }
+    .hero { background-color: #dde3d4; border-radius: 28px; padding: 44px 40px; margin-top: 16px; display: flex; align-items: center; gap: 40px; }
+    .hero-teks { flex: 1; }
+    .foto { width: 240px; height: 300px; object-fit: cover; border-radius: 28px; border: 6px solid #ffffff; box-shadow: 12px 12px 0 #314537; flex-shrink: 0; }
     .label { font-size: 12px; font-weight: 800; letter-spacing: 3px; text-transform: uppercase; color: #4a5e4e; margin: 0 0 12px; }
     h1 { font-size: 44px; line-height: 1.15; margin: 0 0 18px; }
     h2 { font-size: 28px; margin: 0 0 12px; }
     h3 { font-size: 18px; margin: 0; }
+   .foto { width: 320px; height: 420px; object-fit: cover; object-position: center bottom; border-radius: 28px; border: 6px solid #ffffff; box-shadow: 12px 12px 0 #314537; flex-shrink: 0; }
     .tombol { display: inline-block; padding: 13px 26px; border-radius: 999px; font-weight: 700; text-decoration: none; margin: 8px 10px 0 0; }
     .gelap { background-color: #314537; color: #ffffff; }
     .garis { border: 1px solid #314537; color: #314537; }
@@ -52,11 +55,14 @@
 
     <main>
       <section id="tentang" class="hero">
-        <h5 class="label">Mahasiswa Teknik Logistik</h5>
-        <h1>Halo, saya<br>Nazlia Dzahira.</h1>
-        <p>Mahasiswa S1 Teknik Logistik Universitas Pendidikan Indonesia yang tertarik pada perencanaan rantai pasok, operasi pergudangan, logistik ekspor-impor, dan analisis data untuk mendukung pengambilan keputusan dan peningkatan efisiensi operasional logistik.</p>
-        <a class="tombol gelap" href="#pengalaman">Lihat pengalaman</a>
-        <a class="tombol garis" href="https://www.linkedin.com/in/nazliaaz/" target="_blank" rel="noopener">LinkedIn &#8599;</a>
+        <div class="hero-teks">
+          <h5 class="label">Mahasiswa Teknik Logistik</h5>
+          <h1>Halo, saya<br>Nazlia Dzahira.</h1>
+          <p>Mahasiswa S1 Teknik Logistik Universitas Pendidikan Indonesia yang tertarik pada perencanaan rantai pasok, operasi pergudangan, logistik ekspor-impor, dan analisis data untuk mendukung pengambilan keputusan dan peningkatan efisiensi operasional logistik.</p>
+          <a class="tombol gelap" href="#pengalaman">Lihat pengalaman</a>
+          <a class="tombol garis" href="https://www.linkedin.com/in/nazliaaz/" target="_blank" rel="noopener">LinkedIn &#8599;</a>
+        </div>
+        <img class="foto" src="foto.jpg" alt="Foto profil">
       </section>
 
       <section id="minat">
